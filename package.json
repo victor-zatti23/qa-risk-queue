@@ -1,0 +1,15 @@
+{
+  "name": "qa-risk-queue",
+  "version": "1.0.0",
+  "description": "Daily QA risk queue: what was merged, ranked by where a human tester still matters.",
+  "type": "module",
+  "bin": { "qa-risk-queue": "src/cli.mjs" },
+  "scripts": {
+    "queue": "node src/cli.mjs",
+    "demo": "node src/cli.mjs --repo supabase/supabase --config examples/supabase.json --since 1d --out out",
+    "test": "node --test test/"
+  },
+  "engines": { "node": ">=20" },
+  "author": "Victor Zatti",
+  "license": "MIT"
+}
