@@ -1,0 +1,22 @@
+{
+  "ticketPattern": null,
+  "authzIgnore": ["/components/interfaces/Auth/", "/EmailTemplates/"],
+  "repos": {
+    "supabase": {
+      "surface": "Monorepo (tooling)",
+      "critical": false,
+      "paths": [
+        ["^apps/studio/", "Studio (dashboard)", true],
+        ["^apps/lite-studio/", "Lite Studio", true],
+        ["^packages/pg-meta/", "pg-meta (Postgres metadata)", true],
+        ["^packages/api-types/", "API types", true],
+        ["^packages/ui(-patterns)?/", "Shared UI", true],
+        ["^packages/common/", "Shared common", true],
+        ["^supabase/|^docker/", "Self-hosting / local stack", true],
+        ["^apps/docs/", "Docs site", false],
+        ["^apps/www/", "Marketing site", false],
+        ["^apps/(design-system|ui-library|learn|kb)/", "Design system / content", false]
+      ]
+    }
+  }
+}
